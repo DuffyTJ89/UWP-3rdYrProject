@@ -9,5 +9,6 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <!--10.50 video  https://www.youtube.com/watch?v=7XeIJ3EiQm8 -->
     </Grid>
 </Page>
