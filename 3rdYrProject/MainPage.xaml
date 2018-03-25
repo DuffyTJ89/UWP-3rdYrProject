@@ -9,6 +9,45 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <!--10.50 video  https://www.youtube.com/watch?v=7XeIJ3EiQm8 -->
+        <!--10.50 video  https://www.youtube.com/watch?v=7XeIJ3EiQm8 
+        https://openweathermap.org/current
+        -->
+
+        <Grid Background="Blue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+
+                <TextBlock x:Name="txtCity" Text="" FontWeight="SemiBold" FontSize="30" Foreground="AntiqueWhite" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="txtLastUpdate" Text="" FontWeight="SemiBold" FontSize="15" Foreground="WhiteSmoke" HorizontalAlignment="Center"></TextBlock>
+                
+            </StackPanel>
+
+            <ProgressRing x:Name="progressRing" Grid.Row="1" IsAccessKeyScope="False" Width=" 50" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center"></ProgressRing>
+
+            <Image Grid.Row="1" x:Name="imgWeather" Stretch="Uniform" VerticalAlignment="Center" HorizontalAlignment="Center"></Image>
+
+            <StackPanel Grid.Row="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:Name="txtDescription" Text="" FontWeight="SemiBold" FontSize="30" Foreground="AntiqueWhite" TextAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="txtHumidity" Text="" FontWeight="SemiBold" FontSize="30" Foreground="AntiqueWhite" HorizontalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="txtTime" Text="" FontWeight="SemiBold" FontSize="30" Foreground="AntiqueWhite" TextAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                
+            </StackPanel>
+
+            <TextBlock x:Name="txtCel" Text="" FontWeight="SemiBold" FontSize="30" Foreground="AntiqueWhite" HorizontalAlignment="Center"></TextBlock>
+        </Grid>
     </Grid>
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Compact" Background="Orange">
+            <AppBarButton x:Name="btnGetWeather"  Foreground="White" Icon="World" Label="Get Weather"></AppBarButton>
+            
+        </CommandBar>
+        
+    </Page.BottomAppBar>
 </Page>
