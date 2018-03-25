@@ -45,7 +45,7 @@
     </Grid>
     <Page.BottomAppBar>
         <CommandBar ClosedDisplayMode="Compact" Background="Orange">
-            <AppBarButton x:Name="btnGetWeather"  Foreground="White" Icon="World" Label="Get Weather"></AppBarButton>
+            <AppBarButton x:Name="btnGetWeather"  Foreground="White" Icon="World" Label="Get Weather" Click="btnGetWeather_Click"></AppBarButton>
             
         </CommandBar>
         

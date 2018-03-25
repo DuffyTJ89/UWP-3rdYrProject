@@ -18,5 +18,7 @@ namespace _3rdYrProject.Common
             strBuilder.AppendFormat("?lat={0}&lon={1}&APPID={2}&units=metric", lat, lon, API_KEY);
             return strBuilder.ToString();
         }
+
+        
     }
 }
