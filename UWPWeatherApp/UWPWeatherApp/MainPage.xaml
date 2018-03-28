@@ -9,9 +9,13 @@
 
 
         <StackPanel Background="BlueViolet">
-            <Button Content="Get Weather" Click="Button_click" />
+        <Image Name="WIcon" Width="200" Height="200" Source="///Assets/weatherIcon.png"></Image>
+        
+            <Button Content="Get Weather"  Click="Button_click" />
+        
             <TextBlock Name="ResultTextBlock"/>
-            <Image Name="ResultImage" Width="200" Height="200" />
+            <!--<Image Name="ResultImage" Width="200" Height="200" />-->
     </StackPanel>
+    
           
 </Page>

@@ -38,7 +38,9 @@ namespace UWPWeatherApp
             //String icon = String.Format("ms-appx:///Assets/WeatherIcons/{0}.png", myWeather.weather[0].icon); //access local resource with uri
             //ResultImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
 
-            ResultTextBlock.Text = myWeather.name + " - " + ((int)myWeather.main.temp).ToString() + " - " + myWeather.weather[0].description;
+            ResultTextBlock.Text = "Current location : " + myWeather.name+" \n " +  
+                "Tempature : " + ((int)myWeather.main.temp).ToString() + " \n " + 
+                "Description : " + myWeather.weather[0].description;
         }
     }
 }
