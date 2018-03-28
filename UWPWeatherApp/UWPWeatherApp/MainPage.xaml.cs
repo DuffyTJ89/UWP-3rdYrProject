@@ -26,5 +26,10 @@ namespace UWPWeatherApp
         {
             this.InitializeComponent();
         }
+
+        private void Button_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
