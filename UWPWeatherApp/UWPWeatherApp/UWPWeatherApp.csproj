@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LocationManager.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -108,6 +109,24 @@
     <None Include="UWPWeatherApp_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\WeatherIcons\01d.png" />
+    <Content Include="Assets\WeatherIcons\01n.png" />
+    <Content Include="Assets\WeatherIcons\02d.png" />
+    <Content Include="Assets\WeatherIcons\02n.png" />
+    <Content Include="Assets\WeatherIcons\03d.png" />
+    <Content Include="Assets\WeatherIcons\03n.png" />
+    <Content Include="Assets\WeatherIcons\04d.png" />
+    <Content Include="Assets\WeatherIcons\04n.png" />
+    <Content Include="Assets\WeatherIcons\09d.png" />
+    <Content Include="Assets\WeatherIcons\09n.png" />
+    <Content Include="Assets\WeatherIcons\10d.png" />
+    <Content Include="Assets\WeatherIcons\10n.png" />
+    <Content Include="Assets\WeatherIcons\11d.png" />
+    <Content Include="Assets\WeatherIcons\11n.png" />
+    <Content Include="Assets\WeatherIcons\13d.png" />
+    <Content Include="Assets\WeatherIcons\13n.png" />
+    <Content Include="Assets\WeatherIcons\50d.png" />
+    <Content Include="Assets\WeatherIcons\50n.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

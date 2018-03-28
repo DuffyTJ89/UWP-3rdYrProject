@@ -14,9 +14,10 @@ namespace UWPWeatherApp
     {
         public async static Task<RootObject> GetWeather(double lat, double lon) //task<> promise that when this is completed it will give back type RootObject
         {
+            //key for open weather 0aab86a4a278c20065049e12a392756c
             //make call out to open weather
             var http = new HttpClient();
-            var response = await http.GetAsync("http://samples.openweathermap.org/data/2.5/weather?lat=53.27&lon=9.05&appid=b6907d289e10d714a6e88b30761fae22"); //53.2707° N, 9.0568° W galway
+            var response = await http.GetAsync("api.openweathermap.org/data/2.5/weather?lat={53.2707}&lon={9.0568}"); //53.2707° N, 9.0568° W galway
             var result = await response.Content.ReadAsStringAsync(); //result in a string format
             var serializer = new DataContractJsonSerializer(typeof(RootObject)); //To serlize and deserlize from Json
 
