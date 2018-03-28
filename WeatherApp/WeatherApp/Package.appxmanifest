@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="1372d2c8-5244-46fd-8c1a-e0f140dc5195"
+    Name="91636939-b303-4b70-990b-7460140066b8"
     Publisher="CN=T410"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="1372d2c8-5244-46fd-8c1a-e0f140dc5195" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="91636939-b303-4b70-990b-7460140066b8" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>3rdYrProject</DisplayName>
+    <DisplayName>WeatherApp</DisplayName>
     <PublisherDisplayName>T410</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="_3rdYrProject.App">
+      EntryPoint="WeatherApp.App">
       <uap:VisualElements
-        DisplayName="3rdYrProject"
+        DisplayName="WeatherApp"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="3rdYrProject"
+        Description="WeatherApp"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
