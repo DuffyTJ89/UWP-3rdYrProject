@@ -35,6 +35,8 @@ namespace UWPWeatherApp
             //53.2707° N, 9.0568° W galway
             RootObject myWeather = await OpenWeatherMapProxy.GetWeather(position.Coordinate.Latitude, position.Coordinate.Longitude);
 
+
+
             //String icon = String.Format("ms-appx:///Assets/WeatherIcons/{0}.png", myWeather.weather[0].icon); //access local resource with uri
             //ResultImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
 
