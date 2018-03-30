@@ -12,17 +12,7 @@ namespace UWPWeatherApp
 {
     public class OpenWeatherMapProxy
     {
-        public static string url (string lat, string lon)
-        {
-            string API_Link = "http://api.openweathermap.org/data/2.5/weather?";
-            string API_AppID = "0aab86a4a278c20065049e12a392756c";
-
-            StringBuilder strBuilder = new StringBuilder(API_Link);
-            strBuilder.AppendFormat("lat={0}&lon=-{1}&appid={2}&units=metric", lat, lon, API_AppID);
-
-            return strBuilder.ToString();
-        }
-
+        
         public async static Task<RootObject> GetWeather(double lat, double lon) //task<> promise that when this is completed it will give back type RootObject
         {
             //key for open weather 0aab86a4a278c20065049e12a392756c

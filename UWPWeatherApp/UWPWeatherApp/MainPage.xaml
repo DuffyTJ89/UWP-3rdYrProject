@@ -7,15 +7,50 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Pivot x:Name="rootPivot" Background="CornflowerBlue">
+        <PivotItem Header="GetWeather">
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border Background="#2f5cb6"/>
+            <Border Grid.Column ="1" Background="#1f3d7a"/>
+            <Border Grid.Row="1" Grid.ColumnSpan="2" Background="#152951"/>
 
-        <StackPanel Background="BlueViolet">
-        <Image Name="WIcon" Width="200" Height="200" Source="///Assets/weatherIcon.png"></Image>
-        
-            <Button Content="Get Weather"  Click="Button_click" />
-        
-            <TextBlock Name="ResultTextBlock"/>
-            <!--<Image Name="ResultImage" Width="200" Height="200" />-->
-    </StackPanel>
+            <StackPanel Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Center">
+                <TextBlock x:Name="ResultTextBlock" Foreground="White" FontSize="20" />
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock x:Name="ResultTextBlock2" Foreground="White" FontSize="20"/>
+            </StackPanel>
+            <Image Margin="20" Source="Assets/weatherIcon.png"/>
+            </Grid>
+        </PivotItem>
+
+        <PivotItem Header="About">
+            <StackPanel Background="#1f3d7a">
+                <TextBlock Foreground="Red" FontSize="25" Text="This app does not store any user data"></TextBlock>
+                <TextBlock Foreground="White" Margin="0,250,0,0" FontSize="15" Text="Source code for app can be found at :"></TextBlock>
+                <TextBlock>
+                <Span xml:space="preserve"><Hyperlink Foreground="Yellow" NavigateUri="https://github.com/DuffyTJ89/UWP-3rdYrProject">Click Here</Hyperlink></Span>
+                </TextBlock>
+                
+            </StackPanel>
+            
+        </PivotItem>
+    </Pivot>
+    <Page.BottomAppBar>
+        <CommandBar Background="YellowGreen" >
+            
+            <AppBarButton Content="Get Weather" Click="Button_click" Icon="Sync"></AppBarButton>
+        </CommandBar>
+
+    </Page.BottomAppBar>
     
-          
 </Page>

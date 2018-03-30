@@ -23,6 +23,8 @@ namespace UWPWeatherApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -40,9 +42,13 @@ namespace UWPWeatherApp
             //String icon = String.Format("ms-appx:///Assets/WeatherIcons/{0}.png", myWeather.weather[0].icon); //access local resource with uri
             //ResultImage.Source = new BitmapImage(new Uri(icon, UriKind.Absolute));
 
-            ResultTextBlock.Text = "Current location : " + myWeather.name+" \n " +  
-                "Tempature : " + ((int)myWeather.main.temp).ToString() + " \n " + 
+            ResultTextBlock.Text = "Current location : " + myWeather.name + " \n" +
+                "Current Temperture : " + ((int)myWeather.main.temp).ToString() + "°C" + " \n" +
+                "Humidity : " + myWeather.main.humidity + "%" + "\n"+
                 "Description : " + myWeather.weather[0].description;
+
+
+            ResultTextBlock2.Text = "Current Coordinates :" + "\n" + "Latitude : " + position.Coordinate.Latitude + "\n" + "Longitude : " + position.Coordinate.Longitude;
         }
     }
 }
