@@ -36,9 +36,14 @@
         <PivotItem Header="About">
             <StackPanel Background="#1f3d7a">
                 <TextBlock Foreground="Red" FontSize="25" Text="This app does not store any user data"></TextBlock>
-                <TextBlock Foreground="White" Margin="0,250,0,0" FontSize="15" Text="Source code for app can be found at :"></TextBlock>
+                <TextBlock Foreground="White" Margin="0,250,0,0" FontSize="15" Text="Source code for app can be found on GitHub at :"></TextBlock>
                 <TextBlock>
                 <Span xml:space="preserve"><Hyperlink Foreground="Yellow" NavigateUri="https://github.com/DuffyTJ89/UWP-3rdYrProject">Click Here</Hyperlink></Span>
+                </TextBlock>
+                <TextBlock Foreground="White" FontSize="15" Text="This app uses Openweathermap.org to source weather information."></TextBlock>
+                <TextBlock Foreground="White" FontSize="15" Text="Their privacy policy can be found by clicking the link below"></TextBlock>
+                <TextBlock>
+                <Span xml:space="preserve"><Hyperlink Foreground="Yellow" NavigateUri="https://openweathermap.org/privacy-policy">Click Here</Hyperlink></Span>
                 </TextBlock>
                 
             </StackPanel>
