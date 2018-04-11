@@ -13,7 +13,7 @@ The app is available from the windows store and can be found through searching f
 
 You can also clone this repo :
   - Clone the project to your computer
-  - Open project in Visual Studio 2015 or 2017 (App was built in 2015)
+  - Open project in Visual Studio 2015 or 2017 (App was built in VS 2015)
   - Click build on local machine
 # About the App 
 The app makes use of the openweathermap API to give a user the current weather for their location. It does this by getting the user's current position from their device by using location services and storing the longitude and latitude. 
