@@ -48,7 +48,7 @@ The app makes use of the openweathermap API to give a user the current weather f
 
 | Tech | Link |
 | ------ | ------ |
-| Dropbox | https://openweathermap.org/api |
+| Openweathermap API | https://openweathermap.org/api |
 | json2csharp | http://json2csharp.com/ |
 | dillinger | https://dillinger.io/ |
 
