@@ -46,11 +46,18 @@ The app makes use of the openweathermap API to give a user the current weather f
 
 ### Technologies used
 
-| Tech | README |
+| Tech | Link |
 | ------ | ------ |
 | Dropbox | https://openweathermap.org/api |
 | json2csharp | http://json2csharp.com/ |
 | dillinger | https://dillinger.io/ |
 
+## Resources used :
+| Resource | Link |
+| ------ | ------ |
+| channel9's Video tutorial on implementing openweather API | https://channel9.msdn.com/Series/Windows-10-development-for-absolute-beginners/UWP-057-UWP-Weather--Introductioni |
+| EDMT Dev's tutorial on implementing openweather API |https://www.youtube.com/watch?v=7XeIJ3EiQm8|
+|Layout Design Microsoft docs | https://docs.microsoft.com/en-us/windows/uwp/design/layout/grid-tutorial|
 
+  
 Author: Thomas Duffy, GMIT
