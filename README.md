@@ -28,7 +28,7 @@ The app makes use of the openweathermap API to give a user the current weather f
 
 #### MainPage.xaml
 
-> The code for to deal with the fuctions of the main page. The button displayed to the user on the main page to get the weather is handled here. When the user clicks on the button a class is made to OpenWeatherMapProxy.cs to getWeather with the devices positon. The results are then displayed in textblocks.
+> The code for to deal with the fuctions of the main page. The button displayed to the user on the main page to get the weather is handled here. When the user clicks on the button a call is made to OpenWeatherMapProxy.cs to getWeather with the devices positon. The results are then displayed in textblocks.
 
 #### OpenWeatherMapProxy.cs
 
