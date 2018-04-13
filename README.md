@@ -9,7 +9,7 @@ I am a third year Software development student at GMIT and this repo is for my M
 
 # Running the app
 
-The app is available from the windows store and can be found through searching for uwpWeatherApp or clicking on this link : link will be here
+The app is available from the windows store and can be found through searching for uwpWeatherApp or clicking on this link : https://www.microsoft.com/en-us/store/p/uwpweatherapp/9pnms8lfpcfw
 
 You can also clone this repo :
   - Clone the project to your computer
